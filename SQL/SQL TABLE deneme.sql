@@ -1,0 +1,15 @@
+--CREATE TABLE
+CREATE TABLE Kullanicilar (
+    KullaniciID INT PRIMARY KEY,
+    Ad VARCHAR(50),
+    Soyad VARCHAR(50),
+    Yas INT
+);
+--ALTER TABLE
+ALTER TABLE Kullanicilar
+ADD Email VARCHAR(100);
+--DROP TABLE
+DROP TABLE Kullanicilar;
+--DELETE TABLE
+DELETE FROM Kullanicilar
+WHERE Yas < 18;
